@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title>Pokédex</title>
+</head>
+
+<body class=" row bg-sucess justify-content-center align-items-center">
+  <div class="col-sm-4 text-center">
+    <h2>PokéDex</h2>
+    <small class="col-sm-4 text-center">Encuentra tu pokémon en la base de datos!</small>
+    <form action="" onsubmit="searchPokemon(event)" class="">  
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Busca un pokémon por su nombre o número" name="pokemon" autocomplete="off">
+        <div class="input-group-append">
+          <button class="btn btn-outline-primary" id="search-btn">
+            <i class="bi bi-search"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg></i>
+          </button>
+        </div>
+      </div>
+    </form>
+  
+
+  <div data-poke-card class="poke-card">
+    <div data-poke-name class="poke-name">Pokémon</div>
+    <div data-poke-img-container class="img-container">
+      <img src="pokeshadow.jpg" data-poke-img class="poke-img">
+    </div>
+    <div data-poke-id class="poke-id"></div>
+    <div data-poke-types class="poke-types"></div>
+    <div data-poke-stats class="poke-stats"></div>
+    </div>
+  </div>
+    
+ 
+
+
+
+
+<script src="pokedex.js"></script>
+</body>
+</html>

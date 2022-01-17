@@ -1,0 +1,81 @@
+
+body {
+    background-image: url(./pokewallmove.gif);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Montserrat', sans-serif;
+    opacity: 0.5px;
+}
+
+h2 {
+    color: #ffffff;
+    margin: 20px 0;
+    position: relative;
+    background-color: #e96443dc;
+    border-radius: 15px;
+    padding: 5px 0;
+}
+
+small {
+    font-size: 18px;
+    font-weight: bold;
+    color: #38255F;
+}
+
+
+form {
+    margin : 20px 20px;
+}
+
+.poke-card {
+    position: relative;
+    height: fit-content !important;
+    border-radius: 8px;
+    max-width: 400px;
+    color: black;
+    padding: 10px 10px 10px 10px;
+    margin: 0 auto;
+    background-color: rgba(255, 235, 205, 0.603) ;
+    border: 1px solid black;
+}
+
+.img-container {
+    margin: 10px auto;
+}
+
+.poke-stats div {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 4px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.poke-id {
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.poke-types div {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: #e96443dc;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.5px black;
+}
+
+.poke-img {
+    width: 320px;
+    border-radius: 8%;
+}
+
+.poke-name {
+    font-size: 25px;
+    color: #38255F;
+    font-family: 'Anton', sans-serif;
+}
