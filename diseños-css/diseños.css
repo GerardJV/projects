@@ -8,6 +8,10 @@ html {
     scroll-behavior: smooth;
 }
 
+span {
+    color: #fff;
+}
+
 body {
     background-color: #131a2a ;
     
@@ -93,6 +97,7 @@ header nav ul li a:hover {
     align-items: center;
     justify-content: center;
     margin-bottom: 160px;
+    margin-top: -20px;
 }
 
 #sobre-mi section {
@@ -180,26 +185,60 @@ h4 {
     margin-bottom: 80px;
 }
 
-.img-proyectos {
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
+.container {
+    margin-top: 5%;  
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
 
 }
 
-
-.img-proyectos img:hover {
-    mix-blend-mode: normal;
-    transform: scale(1.1);
+.card::before {
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 220%;
+    background: #20a8d9b6;
+    top: -50%;
+    left: -100%;
+    z-index: 1;
+    transform: rotate(25deg);
+    transform-origin: center top 0;
+    transition: .5s;
 }
 
-.img-proyectos img {
-    width: 500px;
-    margin: 0;
-    color: #20a9d975;
-    mix-blend-mode: luminosity;
-    transition: 1s;
-    margin: 0;
+.card:hover:before {
+    left: 10%;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-text {
+    width: 100%;
+    padding: 0 20px;
+    position: absolute;
+    top: -100%;
+    color: #fff;
+    left: 0;
+    z-index: 2;
+    transition: 1.1s;
+}
+
+.card-text h5 {
+    font-family: 'Rubik', sans-serif;
+}
+
+.card-text h6 {
+    font-family: 'Rubik', sans-serif;
+}
+
+.card:hover .card-text {
+    top: 80px;
 }
 
 #contacto {
