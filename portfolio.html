@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="image" property="og:image" content="Imagenes/Gerardo Vargas.jpg"/>
+    <meta name="image" property="og:image" content="./diseños-css/Imagenes/portfolioimg.png"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="diseños-css/diseños.css">
+    <link rel="stylesheet" href="diseños-css/responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
@@ -121,21 +123,48 @@
     <section id="portfolio">
         <h2 class="portafolio">Portafolio - Proyectos realizados</h2>
         <p class="portafolio-descripcion">A medida que vaya mejorando y realizando nuevos proyectos iré actualizando.</p>
-        <div class="descripcion-proyecto">  
-            <p>Calculadora realizada con HTML, CSS Y JS</p>
-            <p>Página web realizada con HTML y CSS</p>
-        </div>   
-        <div class="img-proyectos">
-            
-                <a href="https://gerardjv.github.io/projects/calculadora.html" target="blank">
-                <img src="diseños-css/Imagenes/Calculadora.png" alt="" >
-                </a>
-            
          
-                <a href="https://gerardjv.github.io/websites/vargas-contrucv2.html" target="blank">
-                <img src="diseños-css/Imagenes/vargas-pag_Mesa de trabajo 1.png" alt="">
-                </a>
+           
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="card">
+                        <a class="proyecto-1" href="https://gerardjv.github.io/projects/calculadora.html" target="blank">
+                            <img src="diseños-css/Imagenes/Calculadora.png" alt="">
+                                <div class="card-text">
+                                    <h5>Calculadora</h5>
+                                    <h6>HTML + CSS + JavaScript</h6>
+                                </div>
+                        </a>
+                    </div>
+                </div>    
             
+            
+                <div class="col-md-4 col-sm-6">
+                    <div class="card">
+                        <a class="proyecto-2" href="https://gerardjv.github.io/websites/vargas-contrucv2.html" target="blank">
+                            <img src="diseños-css/Imagenes/vargas-pag_Mesa de trabajo 1.png" alt="">
+                                <div class="card-text">
+                                    <h5>Página Web</h5>
+                                    <h6>HTML + CSS</h6>
+                                </div>
+                        </a>
+                    </div>
+                </div>    
+            
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="card">
+                        <a class="proyecto-3" href="https://gerardjv.github.io/projects/pokedex.html" target="blank">
+                            <img src="diseños-css/Imagenes/pokedex.png" alt="">
+                                <div class="card-text">
+                                    <h5>Pokédex</h5>
+                                    <h6>HTML + CSS + Bootstrap + API Pokémon + JavaScript</h6>
+                                </div>
+                        </a>
+                    </div>
+                </div>    
+            </div>
         </div>
     </section>
 
